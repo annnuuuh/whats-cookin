@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&family=Roboto&display=swap" rel="stylesheet">
+    <title>What's Cookin'</title>
+  </head>
+  <body>
+    <header>
+      <h1>What's Cookin'</h1>
+      <nav>
+        <button class="js-home-btn">Home</button>
+        <button class="js-favorites-btn">Favorites</button>
+        <button class="js-recipes-to-cook-btn">Recipes to Cook</button>
+        <form>
+        <label class="search-box-label">
+          <input type="text" name="search" placeholder="search all recipes..."class="js-search-box">Search All Recipes</input>
+        </label>
+      </form>
+      <button class="js-user-profile-btn">
+      </button>
+      </nav>
+    </header>
+    <main>
+      <div class="container js-home-section">
+      </div>
+      <section class="js-recipe-popout hidden">
+      </section>
+      <section class="search-section js-search-section hidden">
+        <aside class="tags-section js-tags-section">
+        </aside>
+        <section class="results-section js-results-section">
+        </section>
+      </section>
+      <section class="favorites-wrapper js-favorites-wrapper hidden">
+        <label class="search-box-label">
+          <input type="text" name="search-favorites" placeholder="search favorites..."class="favorites-search-box js-favorites-search-box">Search Favorites</input>
+        </label>
+        <section class="js-favorites-tags-section">
+        </section>
+        <section class="js-favorites-section">
+          <section class="favorites-results-section">
+          </section>
+        </section>
+      </section>
+      <section class="recipes-to-cook-section js-recipes-to-cook-section hidden">
+        <section class="js-recipes-to-cook-results">
+        </section>
+      </section>
+      <section class="js-user-pantry hidden">
+        <section class="js-pantry-inventory">
+          <ul class="js-pantry-list"></ul>
+        </section>
+        <form class="js-add-to-pantry">
+          <label for="ingredients-dropdown">Ingredient</label>
+          <select name="ingredients" id="ingredients-dropdown" class="js-ingredients-dropdown"></select>
+          <label for="ingredients-amount-dropdown">Amount</label>
+          <select name="ingredient-amount" id="ingredients-amount-dropdown" class="js-ingredients-amount-dropdown"></select>
+          <button>Add</button>
+        </form>
+      </section>
+    </main >
+  <script src="main.bundle.js"></script></body>
+</html>
